@@ -43,7 +43,7 @@ def to_float(cols: Iterable, df: pd.DataFrame) -> pd.DataFrame:
                     try:
                         float(v)
                     except Exception as e:
-                        print(col, i, v, str(v))
+                        print(col, i, v, str(v), len(v))
                         raise type(e)(e)
     return df
 
